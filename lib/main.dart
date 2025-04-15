@@ -1,4 +1,5 @@
 import 'package:clima_app/clima_screen.dart';
+import 'package:clima_app/navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const PresentationScreen(),
+      home: NavApp(),
     );
   }
 }
